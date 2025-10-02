@@ -18,12 +18,27 @@ for event in data['northern-ireland']['events']:
 
 # Print only the bank holidays that are unique to Northern Ireland
 
+# first get each list of event titles in England and Wales and Scotland
 events_in_england_and_wales = [event['title'] for event in data['england-and-wales']['events']]
 events_in_scotland = [event['title'] for event in data['scotland']['events']]
 
+unqiue_northern_ireland_events = {}
+
+# loop through the events in Northern Ireland and print only those not in the other two lists
 for event in data['northern-ireland']['events']:
-    if event['title'] in events_in_england_and_wales or event['title'] in events_in_scotland:
-        pass
-    else:        
-        print(f"{event['title']} : {event['date']}")
+    if event['title'] not in events_in_england_and_wales and event['title'] not in events_in_scotland:
+        # checking if the event is already in the unique events dict if not create a new list
+        if event['title'] not in unqiue_northern_ireland_events:
+            unqiue_northern_ireland_events[event['title']] =[]
+        # append the date to the list of dates for that event title
+        unqiue_northern_ireland_events[event['title']].append(event['date'])
+
+print("Unique Northern Ireland Bank Holidays")
+print('-----------------------------------')
+
+# print the unique events
+for title, dates in unqiue_northern_ireland_events.items():
+    print(f"{title} : {', '.join(dates)}")
+
+
 
