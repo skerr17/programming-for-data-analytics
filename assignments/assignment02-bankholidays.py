@@ -1,3 +1,4 @@
+# Assignment: Bank Holidays in Northern Ireland
 # This program prints out the bank holidays that happen in Northern Ireland
 # Auther: Stephen Kerr
 
