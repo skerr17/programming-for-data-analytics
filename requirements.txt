@@ -1,0 +1,6 @@
+requests
+pandas
+matplotlib.pyplot
+numpy
+os
+matplotlib.dates
