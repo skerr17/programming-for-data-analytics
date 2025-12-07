@@ -24,4 +24,3 @@ Throughout the semester there were a mix of small practical assignments /  mini 
 
 ### Assignment 06 - Knock Airport Weather
 - A notebook that performs analysis of hourly weather data including temperature trends, daily/monthly averages, wind speed cleaning, rolling averages and maximum wind speed visualisation. For a direct link to Assignment 06 click [here](https://github.com/skerr17/programming-for-data-analytics/tree/main/assignments/assignment06)
-
