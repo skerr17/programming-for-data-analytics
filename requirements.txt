@@ -5,3 +5,7 @@ numpy
 os
 matplotlib.dates
 tabulate
+seaborn
+sklearn.preprocessing
+sklearn.decomposition
+scipy
