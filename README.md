@@ -1,4 +1,4 @@
-# programming-for-data-analytics
+# Programming for Data Analytics
 
 By Stephen Kerr
 
@@ -11,7 +11,6 @@ To learn more information on the HDIP review the link here: [HDIP in Computing a
 ## Technologies 
 - Python
 - Git, GitHub
-
 
 
 ## Table of Contents
